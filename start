@@ -30,6 +30,7 @@ cp -r colors ~/.vim
 #
 echo "--------------------------------------"
 echo "There is more to do:"
+echo "0. install ctags, cscope"
 echo "1. start vim" 
 echo "2. input :BundleInstall" 
 echo "3. restart vim"
