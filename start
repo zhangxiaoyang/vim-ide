@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+#
+# get user input
+#
+echo "Your .vimrc will be covered!"
+read -p "Are you sure? [y/n]"  -n 1 anwser
+echo ""
+
+if [[ "$anwser" == "n" ]] || [[ "$anwser" == "N" ]]; then
+    exit 0    
+fi
+
+#
+# get vundle
+#
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+#
+# set vimrc
+#
+cp .vimrc ~/.
+
+#
+# copy colorscheme
+#
+cp -r colors ~/.vim
+
+#
+# to do
+#
+echo "--------------------------------------"
+echo "There is more to do:"
+echo "1. start vim" 
+echo "2. input :BundleInstall" 
+echo "3. restart vim"
+echo "Welcome to zhangxiaoyang.github.com"
+echo "--------------------------------------"
