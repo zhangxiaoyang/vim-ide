@@ -105,10 +105,23 @@ set sw=4
 set ts=4
 set expandtab
 set smarttab
-inoremap ( ()<LEFT> 
-inoremap { {}<LEFT> 
-inoremap [ []<LEFT> 
-inoremap " ""<LEFT> 
+
+inoremap ( ( )<ESC >i
+inoremap  ) <c-r >=ClosePair(' )')<CR >
+inoremap {  {  }<ESC >i
+inoremap  } <c-r >=ClosePair('}' )<CR >
+inoremap [  [  ]<ESC >i
+inoremap  ] <c-r >=ClosePair(']' )<CR >
+inoremap < < ><ESC >i
+inoremap  > <c-r >=ClosePair('>' )<CR >
+function ClosePair(char )
+    if getline('.' )[ col('.' ) - 1 ] == a:char
+        return "\<Right >"
+    else
+        return a:char
+    endif
+endf
+
 set hlsearch 
 set incsearch 
 set foldenable 
