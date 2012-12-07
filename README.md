@@ -1,4 +1,4 @@
-# My VIM Configuration for Ubuntu using Bundle
+# VIM Configuration for Ubuntu using Bundle
 
 ## Usage:
 1. `sudo ./start`
