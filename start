@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
 #
-# Check if user is root
-#
-if [  $( id -u) != " 0"  ]; then
-    echo "You must be root to run this script!"
-    exit 1
-fi
-
-#
 # get user input
 #
-echo "Your .vimrc will be covered!"
+echo "You must be root to run this script!"
+echo "And your .vimrc will be covered!"
 read -p "Are you sure? [y/n]"  -n 1 anwser
 echo ""
 
@@ -19,14 +12,9 @@ if [[ "$anwser" == "n" ]] || [[ "$anwser" == "N" ]]; then
 fi
 
 #
-# get dependence 
-#
-sudo apt-get install ctags cscope vim-gtk
-
-#
 # get vundle
 #
-sudo rm -r ~/.vim
+rm -r ~/.vim
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 #
@@ -44,7 +32,7 @@ cp -r colors ~/.vim
 #
 echo "--------------------------------------"
 echo "There is more to do:"
-echo "0. install ctags, cscope"
+echo "0. install ctags, cscope, vim-gtk"
 echo "1. start vim" 
 echo "2. input :BundleInstall" 
 echo "3. restart vim"
