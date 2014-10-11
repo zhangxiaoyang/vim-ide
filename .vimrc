@@ -105,6 +105,7 @@ set sw=4
 set ts=4
 set expandtab
 set smarttab
+set pastetoggle=<F9>
 
 inoremap ( ()<ESC>i
 inoremap ) <c-r>=ClosePair(')')<CR>
