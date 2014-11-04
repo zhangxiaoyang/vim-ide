@@ -106,6 +106,7 @@ set ts=4
 set expandtab
 set smarttab
 set pastetoggle=<F9>
+set modeline
 
 inoremap ( ()<ESC>i
 inoremap ) <c-r>=ClosePair(')')<CR>
