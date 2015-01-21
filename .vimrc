@@ -96,6 +96,7 @@ set encoding=utf8
 
 " appearance
 colorscheme freya
+"color desert
 syntax enable
 syntax on
 set nu
@@ -107,6 +108,10 @@ set expandtab
 set smarttab
 set pastetoggle=<F9>
 set modeline
+set cursorline
+"hi cursorline term=bold cterm=bold guibg=grey40
+set cursorcolumn
+"hi cursorcolumn term=bold cterm=bold guibg=grey40
 
 inoremap ( ()<ESC>i
 inoremap ) <c-r>=ClosePair(')')<CR>
@@ -124,9 +129,9 @@ function ClosePair(char)
     endif
 endf
 
-set hlsearch 
+set foldmethod=indent
+set nohlsearch
 set incsearch 
 set foldenable 
 set foldmethod=manual 
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR> 
-
