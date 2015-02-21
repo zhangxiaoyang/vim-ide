@@ -1,9 +1,16 @@
-# VIM Configuration for Ubuntu using Bundle
+vim-ide
+===
 
-## Usage:
-1. `sudo ./start`
-2. start VIM
-3. execute `:BundleInstall`
-4. restart VIM
+Vim configuration based on [vundle](https://github.com/gmarik/vundle)
 
-## Enjoy!
+Usage
+===
+
+```
+git clone https://github.com/zhangxiaoyang/vim-ide
+cd vim-ide
+./start
+```
+
+Open vim and run `:BundleInstall`
+Restart vim and enjoy!
