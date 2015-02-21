@@ -12,5 +12,6 @@ cd vim-ide
 ./start
 ```
 
-Open vim and run `:BundleInstall`
+Open vim and run `:BundleInstall`.
+
 Restart vim and enjoy!
