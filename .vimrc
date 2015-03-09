@@ -8,6 +8,7 @@
 "    required
 """""""""""""""""""""""""""""""""""
 set nocompatible
+set fileencodings=utf-8-bom,ucs-bom,utf-8,cp936,gb18030,ucs,big5
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -130,7 +131,7 @@ function ClosePair(char)
 endf
 
 set foldmethod=indent
-set nohlsearch
+"set nohlsearch
 set incsearch 
 set foldenable 
 set foldmethod=manual 
