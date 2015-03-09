@@ -131,7 +131,7 @@ function ClosePair(char)
 endf
 
 set foldmethod=indent
-"set nohlsearch
+set hlsearch
 set incsearch 
 set foldenable 
 set foldmethod=manual 
