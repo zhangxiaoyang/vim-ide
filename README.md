@@ -15,3 +15,9 @@ cd vim-ide
 Open vim and run `:BundleInstall`.
 
 Restart vim and enjoy!
+
+License
+===
+
+MIT
+
