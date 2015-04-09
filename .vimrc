@@ -107,7 +107,7 @@ set sw=4
 set ts=4
 set expandtab
 set smarttab
-set pastetoggle=<F9>
+set pastetoggle=<F12>
 set modeline
 set cursorline
 "hi cursorline term=bold cterm=bold guibg=grey40
