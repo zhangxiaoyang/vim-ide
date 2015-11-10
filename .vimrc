@@ -56,6 +56,9 @@ Bundle 'minibufexplorerpp'
 " c code tool
 Bundle 'c.vim'
 
+" golang highlight
+Bundle 'fatih/vim-go'
+
 " look for keyword in project
 Bundle 'grep.vim'
 
