@@ -59,6 +59,9 @@ Bundle 'c.vim'
 " golang highlight
 Bundle 'fatih/vim-go'
 
+" less
+Bundle 'groenewege/vim-less'
+
 " look for keyword in project
 Bundle 'grep.vim'
 
