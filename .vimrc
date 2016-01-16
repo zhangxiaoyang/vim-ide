@@ -59,6 +59,9 @@ Bundle 'c.vim'
 " golang highlight
 Bundle 'fatih/vim-go'
 
+" html
+Bundle 'mattn/emmet-vim'
+
 " less
 Bundle 'groenewege/vim-less'
 
@@ -100,6 +103,10 @@ set laststatus=2
 set t_Co=256
 let g:Powerline_symbols='unicode'
 set encoding=utf8
+
+" emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 " appearance
 colorscheme freya
