@@ -59,6 +59,9 @@ Bundle 'c.vim'
 " golang highlight
 Bundle 'fatih/vim-go'
 
+" scala highlight
+Bundle 'derekwyatt/vim-scala'
+
 " html
 Bundle 'mattn/emmet-vim'
 
