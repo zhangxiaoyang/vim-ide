@@ -27,7 +27,7 @@ Bundle 'liangfeng/vimcdoc.git'
 " jump to where the function defined 
 " must install ctags before
 " <CTRL+T> <CTRL+]>
-Bundle 'ctags.vim'
+"Bundle 'ctags.vim'
 
 " quickly view class, struct etc.
 " <:Tlist>
@@ -39,22 +39,22 @@ Bundle 'winmanager'
 
 " super ctags.vim
 " <:cs add /home/XX/cscope.out /home/XX>
-Bundle 'cscope.vim'
+"Bundle 'cscope.vim'
 
 " shift from .c to .h
 " <:A>
-Bundle 'a.vim'
+"Bundle 'a.vim'
 
 " code completion using TAB-KEY
 " <TAB>
-Bundle 'SuperTab'
+"Bundle 'SuperTab'
 
 " edit more than one file
 " <:bp> <:bn>
 Bundle 'minibufexplorerpp'
 
 " c code tool
-Bundle 'c.vim'
+"Bundle 'c.vim'
 
 " golang highlight
 Bundle 'fatih/vim-go'
@@ -69,7 +69,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'groenewege/vim-less'
 
 " look for keyword in project
-Bundle 'grep.vim'
+"Bundle 'grep.vim'
 
 " powerline
 Bundle 'Lokaltog/vim-powerline.git'
@@ -78,6 +78,24 @@ Bundle 'Lokaltog/vim-powerline.git'
 " must install vim-gtk before
 " version 4.00 may have some problem
 Bundle 'zhangxiaoyang/CSApprox-stable.git'
+
+" awesome auto complete plugin
+Bundle 'Valloric/YouCompleteMe'
+
+" syntastic detection
+Bundle 'scrooloose/syntastic'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+let g:syntastic_python_checkers=['pylint']
+let g:syntastic_python_pylint_args='--disable=C0111,R0903,C0301'
 
 """""""""""""""""""""""""""""""""""
 "    required
