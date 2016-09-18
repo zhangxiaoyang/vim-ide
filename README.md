@@ -12,9 +12,7 @@ cd vim-ide
 ./start
 ```
 
-Open vim and run `:BundleInstall`.
-
-Restart vim and enjoy!
+Enjoy!
 
 License
 ===
