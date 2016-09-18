@@ -28,13 +28,17 @@ cp .vimrc ~/.
 cp -r colors ~/.vim
 
 #
+# fetch plugins
+#
+vim +BundleInstall +qall
+
+#
 # to do
 #
-echo "--------------------------------------"
 echo "There is more to do:"
-echo "0. install ctags, cscope, vim-gtk"
-echo "1. start vim" 
-echo "2. input :BundleInstall" 
-echo "3. restart vim"
-echo "Welcome to zhangxiaoyang.github.com"
-echo "--------------------------------------"
+echo "- Beautiful Powerline"
+echo "  apt-get install vim-gtk"
+echo "- YCM"
+echo "  cd ~/.vim/bundle/YouCompleteMe && type cmake && python install.py --clang-completer"
+echo "- JavaScript YCM support"
+echo "  cd ~/.vim/bundle/tern_for_vim && npm install"

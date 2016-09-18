@@ -82,6 +82,9 @@ Bundle 'zhangxiaoyang/CSApprox-stable.git'
 " awesome auto complete plugin
 Bundle 'Valloric/YouCompleteMe'
 
+" javascript auto complete
+Bundle 'marijnh/tern_for_vim'
+
 " syntastic detection
 Bundle 'scrooloose/syntastic'
 set statusline+=%#warningmsg#
@@ -170,3 +173,5 @@ set incsearch
 set foldenable 
 set foldmethod=manual 
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR> 
+
+autocmd FileType javascript setlocal sw=2 ts=2 expandtab
