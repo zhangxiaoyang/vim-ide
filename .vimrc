@@ -31,7 +31,7 @@ Bundle 'liangfeng/vimcdoc.git'
 
 " quickly view class, struct etc.
 " <:Tlist>
-Bundle 'taglist.vim'
+"Bundle 'taglist.vim'
 
 " file explore
 " <wm> 
@@ -77,7 +77,7 @@ Bundle 'Lokaltog/vim-powerline.git'
 " make every colorschemes work
 " must install vim-gtk before
 " version 4.00 may have some problem
-Bundle 'zhangxiaoyang/CSApprox-stable.git'
+"Bundle 'zhangxiaoyang/CSApprox-stable.git'
 
 " awesome auto complete plugin
 Bundle 'Valloric/YouCompleteMe'
