@@ -1,0 +1,47 @@
+set nocompatible
+set fileencodings=utf-8-bom,ucs-bom,utf-8,cp936,gb18030,ucs,big5
+
+filetype off
+filetype plugin indent on
+
+colorscheme freya
+
+syntax enable
+syntax on
+
+set nu
+set autoindent
+set backspace=2
+set sw=4
+set ts=4
+set expandtab
+set smarttab
+set pastetoggle=<F12>
+set modeline
+set cursorline
+set cursorcolumn
+
+inoremap ( ()<ESC>i
+inoremap ) <c-r>=ClosePair(')')<CR>
+inoremap { {}<ESC>i
+inoremap } <c-r>=ClosePair('}')<CR>
+inoremap [ []<ESC>i
+inoremap ] <c-r>=ClosePair(']')<CR>
+inoremap < <><ESC>i
+inoremap > <c-r>=ClosePair('>')<CR>
+function ClosePair(char)
+    if getline('.')[col('.')-1] == a:char
+        return "\<Right>"
+    else
+        return a:char
+    endif
+endf
+
+set foldmethod=indent
+set hlsearch
+set incsearch 
+set foldenable 
+set foldmethod=manual 
+nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR> 
+
+autocmd FileType javascript setlocal sw=2 ts=2 expandtab

@@ -9,7 +9,7 @@ Usage
 ```
 git clone https://github.com/zhangxiaoyang/vim-ide
 cd vim-ide
-./start
+sh run.sh
 ```
 
 Enjoy!
