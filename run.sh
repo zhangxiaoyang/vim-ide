@@ -6,7 +6,7 @@ echo
 echo " 1 - Simple mode"
 echo " 2 - Full mode" 
 echo "========================================"
-read -p "Set vim-ide mode[0/1]" -n 1 mode
+read -p "Set vim-ide mode: " -n 1 mode
 echo
 
 # init vim
